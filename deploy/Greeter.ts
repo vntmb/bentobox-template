@@ -1,5 +1,6 @@
 import { Greeter } from "../typechain";
 
+// TODO: Typescript broken - most types are inferred
 export default async ({ getNamedAccounts, deployments }) => {
   const { deploy } = deployments;
   const { deployer } = await getNamedAccounts();
@@ -11,3 +12,6 @@ export default async ({ getNamedAccounts, deployments }) => {
 
   console.log(`Greeter deployed to ${address}`);
 };
+
+// TODO: Add a HelloBentoBox ts file
+// TODO: add a task folder to interact with HelloBentoBox
